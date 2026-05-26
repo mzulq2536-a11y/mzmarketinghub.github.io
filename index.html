@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ============ SEO META TAGS ============ -->
+    <title>MZ Marketing Hub | Social Media Marketing Agency | Your Growth, Our Strategy</title>
+    <meta name="description" content="MZ Marketing Hub - Professional Social Media Marketing Agency in Mardan, Peshawar, Pakistan. We offer Social Media Marketing, Ads Creation, Logo Design, Brand Development, Content Writing, and more. Your Growth, Our Strategy.">
+    <meta name="keywords" content="social media marketing, social media marketing in Pakistan, social media marketing Mardan, social media marketing Peshawar, ads creation, logo design, brand development, content writing, hashtag research, digital marketing Pakistan, MZ Marketing Hub, social media agency, marketing agency KPK">
+    <meta name="author" content="MZ Marketing Hub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="PK-KP">
+    <meta name="geo.placename" content="Mardan, Peshawar">
+    <meta name="geo.position" content="34.1981;72.0451">
+    
+    <!-- Open Graph (Facebook/WhatsApp Share) -->
+    <meta property="og:title" content="MZ Marketing Hub | Your Growth, Our Strategy">
+    <meta property="og:description" content="Professional Social Media Marketing Agency in Mardan, Peshawar, Pakistan. 9+ services to grow your brand.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MZ Marketing Hub">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MZ Marketing Hub | Your Growth, Our Strategy">
+    <meta name="twitter:description" content="Professional Social Media Marketing Agency in Mardan, Peshawar, Pakistan.">
+    
+    <!-- Canonical URL - CHANGE THIS AFTER PUBLISHING -->
+    <meta name="canonical" content="https://mzmarketinghub.github.io/">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "MZ Marketing Hub",
+        "description": "Professional Social Media Marketing Agency offering Social Media Marketing, Ads Creation, Logo Design, Brand Development, Content Writing, and more.",
+        "slogan": "Your Growth, Our Strategy",
+        "url": "https://mzmarketinghub.github.io/",
+        "email": "mzulq2536@gmail.com",
+        "telephone": "+923295173308",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mardan",
+            "addressRegion": "Peshawar, Khyber Pakhtunkhwa",
+            "addressCountry": "PK"
+        },
+        "priceRange": "Rs. 1,200 - Rs. 40,000",
+        "areaServed": ["Pakistan", "Worldwide"],
+        "service": [
+            {"@type": "Service", "name": "Social Media Marketing"},
+            {"@type": "Service", "name": "Ads Creation"},
+            {"@type": "Service", "name": "Creative Post Designing"},
+            {"@type": "Service", "name": "Brand Development"},
+            {"@type": "Service", "name": "Logo Design"},
+            {"@type": "Service", "name": "Strategy & Planning"},
+            {"@type": "Service", "name": "Content Writing"},
+            {"@type": "Service", "name": "Analytical Reports"},
+            {"@type": "Service", "name": "Hashtag Research"}
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --dark-bg: #0a0a0a;
+            --dark-secondary: #141414;
+            --dark-card: #1a1a1a;
+            --yellow: #FFD700;
+            --yellow-glow: rgba(255, 215, 0, 0.3);
+            --yellow-glow-strong: rgba(255, 215, 0, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --border-dark: #2a2a2a;
+            --dark-input: #1e1e1e;
+            --gradient-yellow: linear-gradient(135deg, #FFD700, #FFA000);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--dark-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--yellow); border-radius: 10px; }
+
+        /* ============ NAVBAR ============ */
+        .navbar {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px); z-index: 1000;
+            border-bottom: 1px solid var(--border-dark);
+            transition: all 0.3s;
+        }
+        .navbar.scrolled { box-shadow: 0 4px 30px var(--yellow-glow); }
+
+        .nav-container {
+            max-width: 1200px; margin: 0 auto;
+            display: flex; justify-content: space-between;
+            align-items: center; padding: 15px 30px;
+        }
+
+        .logo {
+            font-size: 1.8rem; font-weight: 800;
+            color: var(--text-primary); text-decoration: none; letter-spacing: 1px;
+        }
+        .logo i { color: var(--yellow); margin-right: 8px; font-size: 1.6rem; }
+        .logo .mz { color: var(--yellow); }
+        .logo .hub {
+            font-weight: 400; font-size: 0.8rem;
+            color: var(--text-secondary); display: block;
+            letter-spacing: 4px; text-transform: uppercase; margin-left: 34px;
+        }
+
+        .nav-links { display: flex; list-style: none; gap: 35px; align-items: center; }
+        .nav-links a {
+            color: var(--text-secondary); text-decoration: none;
+            font-weight: 500; font-size: 0.95rem; position: relative;
+            transition: color 0.3s; letter-spacing: 0.5px;
+            display: flex; align-items: center; gap: 7px;
+        }
+        .nav-links a i { font-size: 0.9rem; }
+        .nav-links a:hover, .nav-links a.active { color: var(--yellow); }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -5px; left: 0;
+            width: 0; height: 2px; background: var(--yellow); transition: width 0.3s;
+        }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; z-index: 1001; }
+        .hamburger span { width: 30px; height: 3px; background: var(--text-primary); border-radius: 3px; transition: all 0.3s; }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        /* ============ HERO ============ */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center;
+            justify-content: center; text-align: center; padding: 100px 30px 60px;
+            background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.05) 0%, transparent 70%),
+                linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #0a0a0a 100%);
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(255, 215, 0, 0.02) 0%, transparent 50%);
+            animation: rotate 30s linear infinite;
+        }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+        .floating-icons { position: absolute; width: 100%; height: 100%; top: 0; left: 0; pointer-events: none; z-index: 0; }
+        .floating-icon { position: absolute; color: rgba(255, 215, 0, 0.08); font-size: 3rem; animation: float 8s infinite ease-in-out; }
+        .floating-icon:nth-child(1) { top: 15%; left: 10%; font-size: 2.5rem; animation-delay: 0s; }
+        .floating-icon:nth-child(2) { top: 20%; right: 12%; font-size: 3.5rem; animation-delay: 1s; }
+        .floating-icon:nth-child(3) { bottom: 25%; left: 8%; font-size: 2rem; animation-delay: 2s; }
+        .floating-icon:nth-child(4) { bottom: 20%; right: 10%; font-size: 3rem; animation-delay: 3s; }
+        .floating-icon:nth-child(5) { top: 50%; left: 5%; font-size: 2.8rem; animation-delay: 4s; }
+        .floating-icon:nth-child(6) { top: 45%; right: 6%; font-size: 2.2rem; animation-delay: 5s; }
+        @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-30px) rotate(10deg); } }
+
+        .hero-content { max-width: 800px; position: relative; z-index: 1; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--yellow-glow); color: var(--yellow);
+            padding: 10px 25px; border-radius: 50px; font-size: 0.9rem;
+            font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+            margin-bottom: 25px; border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        .hero-badge i { font-size: 1rem; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.3); } }
+
+        .hero h1 { font-size: 3.8rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
+        .hero h1 .highlight { color: var(--yellow); position: relative; }
+        .hero h1 .highlight::after {
+            content: ''; position: absolute; bottom: 8px; left: 0;
+            width: 100%; height: 8px; background: var(--yellow-glow);
+            border-radius: 10px; z-index: -1;
+        }
+        .hero p { font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 35px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .btn-group { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+
+        .btn-primary {
+            background: var(--gradient-yellow); color: var(--dark-bg);
+            padding: 16px 38px; border-radius: 8px; text-decoration: none;
+            font-weight: 700; font-size: 1rem; transition: all 0.3s;
+            border: none; letter-spacing: 0.5px; cursor: pointer;
+            display: inline-flex; align-items: center; gap: 10px;
+        }
+        .btn-primary:hover { box-shadow: 0 0 40px var(--yellow-glow-strong); transform: translateY(-3px); }
+        .btn-secondary {
+            background: transparent; color: var(--yellow);
+            padding: 16px 38px; border-radius: 8px; text-decoration: none;
+            font-weight: 700; font-size: 1rem; transition: all 0.3s;
+            border: 2px solid var(--yellow); letter-spacing: 0.5px; cursor: pointer;
+            display: inline-flex; align-items: center; gap: 10px;
+        }
+        .btn-secondary:hover { background: var(--yellow); color: var(--dark-bg); box-shadow: 0 0 40px var(--yellow-glow-strong); transform: translateY(-3px); }
+
+        .stats-strip { display: flex; justify-content: center; gap: 70px; margin-top: 55px; flex-wrap: wrap; }
+        .stat { text-align: center; position: relative; }
+        .stat:not(:last-child)::after { content: ''; position: absolute; right: -35px; top: 10%; height: 60%; width: 1px; background: var(--border-dark); }
+        .stat-icon { font-size: 1.5rem; color: var(--yellow); margin-bottom: 5px; }
+        .stat-number { font-size: 2.8rem; font-weight: 800; color: var(--yellow); }
+        .stat-label { font-size: 0.85rem; color: var(--text-secondary); letter-spacing: 1px; text-transform: uppercase; }
+        /* ============ SECTION COMMON ============ */
+        section { padding: 100px 30px; max-width: 1200px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 70px; }
+        .section-header .label { display: inline-flex; align-items: center; gap: 8px; color: var(--yellow); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 10px; }
+        .section-header h2 { font-size: 2.6rem; font-weight: 800; margin-bottom: 15px; }
+        .section-header h2 span { color: var(--yellow); }
+        .section-header p { color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+        .divider { width: 60px; height: 3px; background: var(--gradient-yellow); margin: 15px auto; border-radius: 10px; }
+
+        /* ============ SERVICES ============ */
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .service-card {
+            background: var(--dark-card); border: 1px solid var(--border-dark);
+            border-radius: 18px; padding: 40px 30px; transition: all 0.4s;
+            cursor: pointer; position: relative; overflow: hidden; text-align: center;
+        }
+        .service-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
+            background: var(--gradient-yellow); transform: scaleX(0);
+            transform-origin: left; transition: transform 0.5s;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-card:hover { border-color: var(--yellow); transform: translateY(-8px); box-shadow: 0 20px 50px rgba(255, 215, 0, 0.12); }
+        .service-icon-circle {
+            width: 75px; height: 75px; background: var(--yellow-glow);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px; font-size: 1.8rem; color: var(--yellow);
+            transition: all 0.4s; border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        .service-card:hover .service-icon-circle { background: var(--gradient-yellow); color: var(--dark-bg); box-shadow: 0 0 30px var(--yellow-glow-strong); }
+        .service-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; }
+        .service-card p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; }
+        .service-card .click-hint { display: inline-block; margin-top: 15px; color: var(--yellow); font-size: 0.8rem; font-weight: 600; opacity: 0; transition: opacity 0.3s; }
+        .service-card:hover .click-hint { opacity: 1; }
+
+        /* ============ MODAL ============ */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); z-index: 9999; justify-content: center; align-items: center; padding: 20px; animation: fadeIn 0.3s ease; }
+        .modal-overlay.active { display: flex; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        .modal { background: var(--dark-card); border: 1px solid var(--border-dark); border-radius: 24px; max-width: 650px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 45px 35px; position: relative; animation: slideUp 0.4s ease; }
+        .modal-close { position: absolute; top: 20px; right: 20px; background: var(--border-dark); border: none; color: var(--text-primary); width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; transition: all 0.3s; display: flex; align-items: center; justify-content: center; }
+        .modal-close:hover { background: #ff4444; color: white; transform: rotate(90deg); }
+        .modal-icon-big { width: 90px; height: 90px; background: var(--yellow-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; color: var(--yellow); margin: 0 auto 25px; border: 1px solid rgba(255, 215, 0, 0.3); }
+        .modal h3 { font-size: 1.8rem; font-weight: 800; text-align: center; margin-bottom: 8px; }
+        .modal .modal-price { text-align: center; font-size: 2rem; font-weight: 800; color: var(--yellow); margin-bottom: 25px; }
+        .modal .modal-price span { font-size: 0.9rem; color: var(--text-secondary); font-weight: 400; }
+        .modal .modal-description { color: var(--text-secondary); text-align: center; margin-bottom: 25px; font-size: 1rem; line-height: 1.7; }
+        .modal .modal-features { list-style: none; margin-bottom: 30px; }
+        .modal .modal-features li { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border-dark); color: var(--text-primary); font-size: 0.95rem; }
+        .modal .modal-features li i { color: var(--yellow); font-size: 1rem; }
+        .modal .btn-order-now { width: 100%; background: var(--gradient-yellow); color: var(--dark-bg); padding: 16px; border: none; border-radius: 10px; font-weight: 700; font-size: 1.05rem; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; }
+        .modal .btn-order-now:hover { box-shadow: 0 0 40px var(--yellow-glow-strong); transform: translateY(-2px); }
+
+        /* ============ ABOUT ============ */
+        .about-section { background: var(--dark-secondary); border-top: 1px solid var(--border-dark); border-bottom: 1px solid var(--border-dark); max-width: 100%; }
+        .about-container { max-width: 1200px; margin: 0 auto; padding: 100px 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+        .about-image { background: linear-gradient(135deg, #1a1a1a, #0a0a0a); border-radius: 24px; height: 420px; display: flex; align-items: center; justify-content: center; font-size: 7rem; color: var(--yellow); border: 1px solid rgba(255, 215, 0, 0.2); position: relative; overflow: hidden; }
+        .about-image::after { content: ''; position: absolute; width: 200px; height: 200px; background: var(--yellow-glow); border-radius: 50%; filter: blur(80px); animation: pulse-glow 3s infinite; }
+        @keyframes pulse-glow { 0%, 100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(1.3); opacity: 0.8; } }
+        .about-text .label { display: inline-flex; align-items: center; gap: 8px; color: var(--yellow); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem; }
+        .about-text h2 { font-size: 2.4rem; font-weight: 800; margin: 12px 0 20px; }
+        .about-text h2 span { color: var(--yellow); }
+        .about-text p { color: var(--text-secondary); margin-bottom: 20px; font-size: 1rem; }
+        .about-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
+        .highlight-item { display: flex; align-items: center; gap: 12px; color: var(--text-primary); font-weight: 600; font-size: 0.95rem; background: var(--dark-card); padding: 12px 18px; border-radius: 10px; border: 1px solid var(--border-dark); transition: all 0.3s; }
+        .highlight-item:hover { border-color: var(--yellow); }
+        .highlight-item i { color: var(--yellow); font-size: 1.1rem; }
+
+        /* ============ ORDER ============ */
+        .order-section { background: var(--dark-bg); }
+        .order-container { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; align-items: start; }
+        .order-info h2 { font-size: 2.4rem; font-weight: 800; margin-bottom: 15px; }
+        .order-info h2 span { color: var(--yellow); }
+        .order-info>p { color: var(--text-secondary); margin-bottom: 30px; }
+        .order-steps { list-style: none; }
+        .order-steps li { display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start; }
+        .step-num { background: var(--gradient-yellow); color: var(--dark-bg); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1rem; flex-shrink: 0; box-shadow: 0 0 20px var(--yellow-glow); }
+        .step-content h4 { font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; }
+        .step-content p { font-size: 0.88rem; color: var(--text-secondary); margin: 0; }
+        .order-form-card { background: var(--dark-card); border: 1px solid var(--border-dark); border-radius: 20px; padding: 45px 35px; }
+        .order-form-card h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; text-align: center; }
+        .order-form-card h3 span { color: var(--yellow); }
+        .order-form-card .form-subtitle { text-align: center; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 30px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
+        .form-group { margin-bottom: 18px; }
+        .form-group label { display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.9rem; margin-bottom: 7px; color: var(--text-secondary); }
+        .form-group label i { font-size: 0.85rem; color: var(--yellow); }
+        .form-group label .required { color: var(--yellow); margin-left: 2px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 18px; background: var(--dark-input); border: 1px solid var(--border-dark); border-radius: 10px; color: var(--text-primary); font-size: 0.95rem; font-family: inherit; transition: all 0.3s; outline: none; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--yellow); box-shadow: 0 0 20px var(--yellow-glow); }
+        .form-group textarea { resize: vertical; min-height: 110px; }
+        .form-group input[type="file"] { padding: 12px; cursor: pointer; }
+        .form-group input[type="file"]::file-selector-button { background: var(--gradient-yellow); color: var(--dark-bg); border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: 700; margin-right: 12px; }
+        .btn-submit { width: 100%; background: var(--gradient-yellow); color: var(--dark-bg); padding: 16px; border: none; border-radius: 10px; font-weight: 700; font-size: 1.05rem; cursor: pointer; transition: all 0.3s; letter-spacing: 1px; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .btn-submit:hover { box-shadow: 0 0 40px var(--yellow-glow-strong); transform: translateY(-2px); }
+        .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        /* ============ CONTACT ============ */
+        .contact-section { background: var(--dark-secondary); max-width: 100%; border-top: 1px solid var(--border-dark); }
+        .contact-container { max-width: 1200px; margin: 0 auto; padding: 100px 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info h2 { font-size: 2.4rem; font-weight: 800; margin-bottom: 15px; }
+        .contact-info h2 span { color: var(--yellow); }
+        .contact-info>p { color: var(--text-secondary); margin-bottom: 35px; }
+        .contact-item { display: flex; align-items: center; gap: 18px; margin-bottom: 18px; padding: 20px; background: var(--dark-card); border-radius: 14px; border: 1px solid var(--border-dark); transition: all 0.3s; cursor: pointer; }
+        .contact-item:hover { border-color: var(--yellow); box-shadow: 0 10px 30px rgba(255, 215, 0, 0.08); }
+        .contact-icon-circle { width: 55px; height: 55px; background: var(--yellow-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--yellow); flex-shrink: 0; border: 1px solid rgba(255, 215, 0, 0.2); }
+        .contact-detail h4 { font-weight: 700; font-size: 0.95rem; margin-bottom: 3px; }
+        .contact-detail a, .contact-detail span { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+        .contact-detail a:hover { color: var(--yellow); }
+        .contact-form-card { background: var(--dark-card); border: 1px solid var(--border-dark); border-radius: 20px; padding: 40px 35px; }
+        .contact-form-card h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; text-align: center; }
+        .contact-form-card h3 span { color: var(--yellow); }
+        .contact-form-card .btn-submit { background: transparent; color: var(--yellow); border: 2px solid var(--yellow); }
+        .contact-form-card .btn-submit:hover { background: var(--gradient-yellow); color: var(--dark-bg); border-color: transparent; }
+
+        /* ============ FOOTER ============ */
+        footer { background: var(--dark-bg); border-top: 1px solid var(--border-dark); text-align: center; padding: 35px 30px; color: var(--text-secondary); font-size: 0.9rem; }
+        footer span { color: var(--yellow); font-weight: 600; }
+        footer i { color: var(--yellow); margin: 0 3px; }
+        /* ============ SUCCESS MESSAGE ============ */
+        .success-msg { display: none; background: rgba(0, 200, 0, 0.12); border: 1px solid rgba(0, 200, 0, 0.4); color: #4caf50; padding: 16px 22px; border-radius: 10px; text-align: center; margin-bottom: 22px; font-weight: 600; }
+        .success-msg i { margin-right: 8px; }
+        .spinner { display: none; width: 20px; height: 20px; border: 3px solid rgba(0, 0, 0, 0.3); border-top: 3px solid var(--dark-bg); border-radius: 50%; animation: spin 0.8s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 992px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .order-container, .contact-container, .about-container { grid-template-columns: 1fr; }
+            .about-image { height: 280px; }
+            .stat:not(:last-child)::after { display: none; }
+            .stats-strip { gap: 35px; }
+        }
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links { position: fixed; top: 0; right: -100%; width: 75%; height: 100vh; background: var(--dark-secondary); flex-direction: column; justify-content: center; gap: 35px; transition: right 0.4s; border-left: 1px solid var(--border-dark); }
+            .nav-links.active { right: 0; }
+            .hero h1 { font-size: 2.4rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .stats-strip { gap: 25px; }
+            .stat-number { font-size: 2rem; }
+            section, .about-container, .contact-container { padding: 70px 20px; }
+            .order-form-card { padding: 30px 22px; }
+            .section-header h2 { font-size: 2rem; }
+            .modal { padding: 30px 20px; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.9rem; }
+            .btn-group { flex-direction: column; align-items: center; }
+            .btn-primary, .btn-secondary { width: 100%; text-align: center; justify-content: center; }
+            .section-header h2 { font-size: 1.8rem; }
+            .stats-strip { gap: 20px; }
+            .stat-number { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="MZ Marketing Hub Home">
+                <i class="fa-solid fa-chart-line"></i> MZ<span class="mz">Marketing</span>
+                <span class="hub">Hub</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                <li><a href="#services"><i class="fa-solid fa-layer-group"></i> Services</a></li>
+                <li><a href="#order"><i class="fa-solid fa-cart-shopping"></i> Order Now</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" aria-label="Menu" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <main>
+    <section class="hero" id="home">
+        <div class="floating-icons" aria-hidden="true">
+            <i class="fa-brands fa-facebook floating-icon"></i>
+            <i class="fa-brands fa-instagram floating-icon"></i>
+            <i class="fa-brands fa-tiktok floating-icon"></i>
+            <i class="fa-brands fa-linkedin floating-icon"></i>
+            <i class="fa-brands fa-x-twitter floating-icon"></i>
+            <i class="fa-brands fa-youtube floating-icon"></i>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fa-solid fa-rocket"></i> Social Media Marketing Agency</div>
+            <h1>Your Growth, <span class="highlight">Our Strategy</span></h1>
+            <p>We help brands dominate social media with powerful marketing strategies, creative designs, and data-driven results. Based in Mardan, Peshawar — serving clients worldwide.</p>
+            <div class="btn-group">
+                <a href="#order" class="btn-primary"><i class="fa-solid fa-bolt"></i> Order Now</a>
+                <a href="#services" class="btn-secondary"><i class="fa-solid fa-magnifying-glass"></i> Explore Services</a>
+            </div>
+            <div class="stats-strip">
+                <div class="stat"><div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div><div class="stat-number" data-count="150">0+</div><div class="stat-label">Happy Clients</div></div>
+                <div class="stat"><div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div><div class="stat-number" data-count="500">0+</div><div class="stat-label">Projects Done</div></div>
+                <div class="stat"><div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div><div class="stat-number" data-count="3">0+</div><div class="stat-label">Years Exp.</div></div>
+                <div class="stat"><div class="stat-icon"><i class="fa-solid fa-list-check"></i></div><div class="stat-number" data-count="9">0</div><div class="stat-label">Services</div></div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image" aria-hidden="true"><i class="fa-solid fa-fire"></i></div>
+            <div class="about-text">
+                <span class="label"><i class="fa-solid fa-user-group"></i> About Us</span>
+                <h2>We Are <span>MZ Marketing Hub</span></h2>
+                <p>At MZ Marketing Hub, we are passionate about helping businesses grow through innovative social media marketing strategies. Our mission is simple: <strong>Your Growth, Our Strategy.</strong></p>
+                <p>With years of experience in the digital marketing space, we understand what it takes to build a powerful online presence. Based in <strong>Mardan, Peshawar, Pakistan</strong> — serving clients worldwide.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item"><i class="fa-solid fa-paintbrush"></i> Creative Experts</div>
+                    <div class="highlight-item"><i class="fa-solid fa-chart-pie"></i> Data-Driven</div>
+                    <div class="highlight-item"><i class="fa-solid fa-clock"></i> On-Time Delivery</div>
+                    <div class="highlight-item"><i class="fa-solid fa-headset"></i> 24/7 Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services">
+        <div class="section-header">
+            <span class="label"><i class="fa-solid fa-star"></i> Our Services</span>
+            <h2>What We <span>Offer</span></h2>
+            <div class="divider"></div>
+            <p>Click on any service to view details and pricing in PKR</p>
+        </div>
+        <div class="services-grid" id="servicesGrid"></div>
+    </section>
+
+    <!-- ============ MODAL ============ -->
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+        <div class="modal" id="serviceModal" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon-big" id="modalIcon"></div>
+            <h3 id="modalTitle"></h3>
+            <div class="modal-price" id="modalPrice"></div>
+            <p class="modal-description" id="modalDescription"></p>
+            <ul class="modal-features" id="modalFeatures"></ul>
+            <a href="#order" class="btn-order-now" id="modalOrderBtn"><i class="fa-solid fa-bolt"></i> Order This Service</a>
+        </div>
+    </div>
+
+    <!-- ============ ORDER ============ -->
+    <section class="order-section" id="order">
+        <div class="section-header">
+            <span class="label"><i class="fa-solid fa-paper-plane"></i> Get Started</span>
+            <h2>Order <span>Now</span></h2>
+            <div class="divider"></div>
+            <p>Fill the form below and we'll contact you on WhatsApp within 24 hours</p>
+        </div>
+        <div class="order-container">
+            <div class="order-info">
+                <h2>How It <span>Works</span></h2>
+                <p>Simple and transparent process to kickstart your project.</p>
+                <ul class="order-steps">
+                    <li><div class="step-num">1</div><div class="step-content"><h4>Fill the Form</h4><p>Share your requirements and select the services you need.</p></div></li>
+                    <li><div class="step-num">2</div><div class="step-content"><h4>Get a Quote</h4><p>We'll contact you via WhatsApp within 24 hours.</p></div></li>
+                    <li><div class="step-num">3</div><div class="step-content"><h4>We Start Working</h4><p>Once confirmed, our team kicks off your project.</p></div></li>
+                    <li><div class="step-num">4</div><div class="step-content"><h4>Deliver & Grow</h4><p>Receive top-quality work and watch your business grow!</p></div></li>
+                </ul>
+            </div>
+            <div class="order-form-card">
+                <h3>Book Your <span>Service</span></h3>
+                <p class="form-subtitle">Fill in the details and we'll contact you on WhatsApp</p>
+                <div class="success-msg" id="orderSuccess"><i class="fa-solid fa-circle-check"></i> Your order has been submitted! We'll contact you on WhatsApp soon.</div>
+                <form id="orderForm">
+                    <div class="form-row">
+                        <div class="form-group"><label><i class="fa-solid fa-user"></i> Full Name <span class="required">*</span></label><input type="text" id="ofName" placeholder="Enter your full name" required></div>
+                        <div class="form-group"><label><i class="fa-solid fa-envelope"></i> Email Address <span class="required">*</span></label><input type="email" id="ofEmail" placeholder="your@email.com" required></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label><i class="fa-brands fa-whatsapp"></i> Phone / WhatsApp <span class="required">*</span></label><input type="tel" id="ofPhone" placeholder="+92 300 1234567" required></div>
+                        <div class="form-group"><label><i class="fa-solid fa-gear"></i> Select Service <span class="required">*</span></label><select required id="orderServiceSelect"><option value="">Choose a service...</option></select></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label><i class="fa-solid fa-coins"></i> Budget Range (PKR)</label><select id="ofBudget"><option value="">Select budget...</option><option value="Under Rs. 5,000">Under Rs. 5,000</option><option value="Rs. 5,000 - Rs. 15,000">Rs. 5,000 - Rs. 15,000</option><option value="Rs. 15,000 - Rs. 30,000">Rs. 15,000 - Rs. 30,000</option><option value="Rs. 30,000 - Rs. 50,000">Rs. 30,000 - Rs. 50,000</option><option value="Rs. 50,000+">Rs. 50,000+</option></select></div>
+                        <div class="form-group"><label><i class="fa-solid fa-calendar-days"></i> Deadline</label><input type="date" id="ofDeadline"></div>
+                    </div>
+                    <div class="form-group"><label><i class="fa-solid fa-align-left"></i> Project Details <span class="required">*</span></label><textarea id="ofDetails" placeholder="Describe your project requirements in detail..." required></textarea></div>
+                    <div class="form-group"><label><i class="fa-solid fa-cloud-arrow-up"></i> Upload Reference Files (optional)</label><input type="file" id="ofFile" multiple></div>
+                    <button type="submit" class="btn-submit" id="orderSubmitBtn"><i class="fa-solid fa-rocket"></i> Submit Order<div class="spinner" id="orderSpinner"></div></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <span class="label"><i class="fa-solid fa-address-book"></i> Get In Touch</span>
+                <h2>Contact <span>Us</span></h2>
+                <p>Have questions? Reach out through any of the channels below.</p>
+                <div class="contact-item"><div class="contact-icon-circle"><i class="fa-solid fa-envelope"></i></div><div class="contact-detail"><h4>Email</h4><a href="mailto:mzulq2536@gmail.com">mzulq2536@gmail.com</a></div></div>
+                <div class="contact-item"><div class="contact-icon-circle"><i class="fa-brands fa-whatsapp"></i></div><div class="contact-detail"><h4>WhatsApp</h4><a href="https://wa.me/923295173308" target="_blank" rel="noopener">+92 329 5173308</a></div></div>
+                <div class="contact-item"><div class="contact-icon-circle"><i class="fa-solid fa-location-dot"></i></div><div class="contact-detail"><h4>Location</h4><span>Mardan, Peshawar, Pakistan</span></div></div>
+            </div>
+            <div class="contact-form-card">
+                <h3>Send a <span>Message</span></h3>
+                <div class="success-msg" id="contactSuccess"><i class="fa-solid fa-circle-check"></i> Message sent! We'll get back to you on WhatsApp soon.</div>
+                <form id="contactForm">
+                    <div class="form-group"><label><i class="fa-solid fa-user"></i> Your Name <span class="required">*</span></label><input type="text" id="cfName" placeholder="Enter your name" required></div>
+                    <div class="form-group"><label><i class="fa-solid fa-envelope"></i> Your Email <span class="required">*</span></label><input type="email" id="cfEmail" placeholder="your@email.com" required></div>
+                    <div class="form-group"><label><i class="fa-solid fa-message"></i> Message <span class="required">*</span></label><textarea id="cfMessage" placeholder="Write your message here..." required></textarea></div>
+                    <button type="submit" class="btn-submit" id="contactSubmitBtn"><i class="fa-solid fa-paper-plane"></i> Send Message<div class="spinner" id="contactSpinner"></div></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <p>&copy; 2026 <span>MZ Marketing Hub</span>. All Rights Reserved. | <i class="fa-solid fa-chart-line"></i> Your Growth, Our Strategy</p>
+    </footer>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script>
+        const YOUR_WHATSAPP = '923295173308';
+        const FORMSPREE_ENDPOINT = 'https://formspree.io/f/CHANGE_THIS_TO_YOUR_FORM_ID';
+
+        const servicesData = [
+            { id: 'social-media-marketing', icon: 'fa-solid fa-share-nodes', title: 'Social Media Marketing', shortDesc: 'Full-scale social media management across all platforms to boost your brand\'s online presence.', price: 'Rs. 25,000', priceLabel: '/month', description: 'Dominate social media with our comprehensive marketing package. We manage your accounts and grow your audience organically across Facebook, Instagram, Twitter, LinkedIn, and TikTok.', features: ['Complete social media account management','Custom content calendar & strategy','Daily posting & community engagement','Hashtag strategy & optimization','Monthly performance reports','Competitor analysis & insights','24/7 account monitoring','Growth tracking dashboard'] },
+            { id: 'ads-creation', icon: 'fa-solid fa-rectangle-ad', title: 'Ads Creation', shortDesc: 'High-converting ad campaigns designed to maximize your ROI and reach your target audience.', price: 'Rs. 15,000', priceLabel: '/campaign', description: 'Get high-performing ad campaigns that convert. We create, manage, and optimize your paid advertising across Facebook, Instagram, Google, and TikTok Ads.', features: ['Custom ad creative & copywriting','Target audience research & setup','A/B testing for best performance','Pixel & conversion tracking setup','Retargeting campaign setup','Weekly performance optimization','Detailed ROI reports','Ad spend management'] },
+            { id: 'creative-post-designing', icon: 'fa-solid fa-palette', title: 'Creative Post Designing', shortDesc: 'Stunning, scroll-stopping graphics that capture attention and communicate your message.', price: 'Rs. 2,000', priceLabel: '/post', description: 'Eye-catching social media posts designed to stop the scroll. Our creative team crafts visually stunning graphics tailored to your brand identity.', features: ['Custom graphic design for each post','Brand-consistent color schemes','Multiple design revisions','Optimized for all platforms','High-resolution source files','Carousel & story designs','Infographic creation','Quick turnaround time'] },
+            { id: 'brand-development', icon: 'fa-solid fa-bullhorn', title: 'Brand Development', shortDesc: 'Build a strong, memorable brand identity that resonates with your audience.', price: 'Rs. 40,000', priceLabel: '/package', description: 'Transform your business into a recognizable brand. We develop complete brand identities including strategy, visual design, voice & tone, and guidelines.', features: ['Brand strategy & positioning','Visual identity design','Brand voice & messaging','Brand style guide document','Logo & color palette','Typography selection','Brand storytelling','Market positioning analysis'] },
+            { id: 'logo-design', icon: 'fa-solid fa-pen-nib', title: 'Logo Design', shortDesc: 'Professional and creative logo designs that perfectly represent your brand.', price: 'Rs. 8,000', priceLabel: '/logo', description: 'Get a unique, professional logo that captures your brand\'s essence. We create custom logo designs with multiple concepts and unlimited revisions.', features: ['Multiple unique concepts','Unlimited revisions','Vector source files (AI, EPS)','PNG, JPG, SVG formats','Social media kit included','Brand color palette','Typography recommendations','Fast delivery within 48 hours'] },
+            { id: 'strategy-planning', icon: 'fa-solid fa-chess-queen', title: 'Strategy & Planning', shortDesc: 'Custom marketing strategies to achieve your business goals systematically.', price: 'Rs. 30,000', priceLabel: '/strategy', description: 'Stop guessing and start growing with a data-driven marketing strategy. We analyze your market, competitors, and audience to create a comprehensive roadmap.', features: ['Market & competitor analysis','Target audience profiling','Content strategy development','Platform-specific recommendations','30/60/90 day action plan','KPIs & success metrics','Budget allocation guide','Quarterly review & adjustments'] },
+            { id: 'content-writing', icon: 'fa-solid fa-feather-pointed', title: 'Content Writing', shortDesc: 'Engaging, SEO-friendly content that connects with your audience and drives action.', price: 'Rs. 1,200', priceLabel: '/100 words', description: 'Words that work. Our professional content writers craft compelling, SEO-optimized content for your website, social media, blogs, and ad copies.', features: ['SEO-optimized content','Social media captions','Blog posts & articles','Ad copy & sales copy','Website content','Product descriptions','Keyword research included','Plagiarism-free guarantee'] },
+            { id: 'analytical-reports', icon: 'fa-solid fa-chart-simple', title: 'Analytical Reports', shortDesc: 'Detailed performance reports with actionable insights to optimize campaigns.', price: 'Rs. 12,000', priceLabel: '/report', description: 'Know exactly what\'s working and what\'s not. Our detailed analytical reports provide deep insights into your social media performance.', features: ['Comprehensive performance analysis','Audience insights & demographics','Content performance breakdown','Competitor benchmarking','Growth trend analysis','Engagement metrics deep dive','Actionable recommendations','Visual data presentations'] },
+            { id: 'hashtag-research', icon: 'fa-solid fa-hashtag', title: 'Hashtag Research', shortDesc: 'Strategic hashtag research to increase your reach and discoverability.', price: 'Rs. 4,000', priceLabel: '/set', description: 'Unlock massive organic reach with strategic hashtag research. We identify high-performing, relevant hashtags for your content.', features: ['Platform-specific hashtag sets','Trending & niche hashtags','Competitor hashtag analysis','Reach potential scoring','Categorized hashtag groups','Regular updates & refreshes','Hashtag performance tracking','Best practices guide'] }
+        ];
+
+        const servicesGrid = document.getElementById('servicesGrid');
+        const orderServiceSelect = document.getElementById('orderServiceSelect');
+
+        servicesData.forEach(service => {
+            const card = document.createElement('div');
+            card.className = 'service-card';
+            card.setAttribute('data-service-id', service.id);
+            card.innerHTML = `<div class="service-icon-circle"><i class="${service.icon}"></i></div><h3>${service.title}</h3><p>${service.shortDesc}</p><span class="click-hint"><i class="fa-solid fa-hand-pointer"></i> Click for details</span>`;
+            card.addEventListener('click', () => openModal(service));
+            servicesGrid.appendChild(card);
+            const option = document.createElement('option');
+            option.value = service.title;
+            option.textContent = service.title;
+            orderServiceSelect.appendChild(option);
+        });
+        const multipleOption = document.createElement('option');
+        multipleOption.value = 'Multiple Services';
+        multipleOption.textContent = 'Multiple Services';
+        orderServiceSelect.appendChild(multipleOption);
+
+        const modalOverlay = document.getElementById('modalOverlay');
+        const modalIcon = document.getElementById('modalIcon');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalFeatures = document.getElementById('modalFeatures');
+        const modalOrderBtn = document.getElementById('modalOrderBtn');
+        const modalClose = document.getElementById('modalClose');
+
+        function openModal(service) {
+            modalIcon.innerHTML = `<i class="${service.icon}"></i>`;
+            modalTitle.textContent = service.title;
+            modalPrice.innerHTML = `${service.price} <span>${service.priceLabel}</span>`;
+            modalDescription.textContent = service.description;
+            modalFeatures.innerHTML = service.features.map(f => `<li><i class="fa-solid fa-circle-check"></i> ${f}</li>`).join('');
+            modalOrderBtn.setAttribute('data-service', service.title);
+            modalOverlay.classList.add('active');
+            modalOverlay.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modalOverlay.classList.remove('active');
+            modalOverlay.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        modalOrderBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const serviceName = this.getAttribute('data-service');
+            closeModal();
+            setTimeout(() => {
+                document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+                for (let i = 0; i < orderServiceSelect.options.length; i++) {
+                    if (orderServiceSelect.options[i].value === serviceName) {
+                        orderServiceSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }, 400);
+        });
+
+        function sendToWhatsApp(data, type) {
+            let message;
+            if (type === 'order') {
+                message = `🛒 *NEW ORDER - MZ Marketing Hub* 🛒\n\n👤 *Name:* ${data.name}\n📧 *Email:* ${data.email}\n📱 *Phone:* ${data.phone}\n🎯 *Service:* ${data.service}\n💰 *Budget:* ${data.budget || 'Not specified'}\n📅 *Deadline:* ${data.deadline || 'Not specified'}\n📝 *Details:* ${data.details}\n\n🚀 _Sent from MZ Marketing Hub Website_`;
+            } else {
+                message = `💬 *NEW MESSAGE - MZ Marketing Hub* 💬\n\n👤 *Name:* ${data.name}\n📧 *Email:* ${data.email}\n💬 *Message:* ${data.message}\n\n🚀 _Sent from MZ Marketing Hub Website_`;
+            }
+            window.open(`https://wa.me/${YOUR_WHATSAPP}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        async function sendToEmail(data, type) {
+            try {
+                const formData = new FormData();
+                if (type === 'order') {
+                    formData.append('name', data.name);
+                    formData.append('email', data.email);
+                    formData.append('phone', data.phone);
+                    formData.append('service', data.service);
+                    formData.append('budget', data.budget);
+                    formData.append('deadline', data.deadline);
+                    formData.append('details', data.details);
+                    formData.append('_subject', `New Order: ${data.service} - ${data.name}`);
+                } else {
+                    formData.append('name', data.name);
+                    formData.append('email', data.email);
+                    formData.append('message', data.message);
+                    formData.append('_subject', `New Message from ${data.name} - MZ Marketing Hub`);
+                }
+                await fetch(FORMSPREE_ENDPOINT, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+                return true;
+            } catch (error) {
+                return false;
+            }
+        }
+
+        document.getElementById('orderForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('orderSubmitBtn');
+            const spinner = document.getElementById('orderSpinner');
+            const btnIcon = submitBtn.querySelector('i');
+            const data = {
+                name: document.getElementById('ofName').value.trim(),
+                email: document.getElementById('ofEmail').value.trim(),
+                phone: document.getElementById('ofPhone').value.trim(),
+                service: document.getElementById('orderServiceSelect').value,
+                budget: document.getElementById('ofBudget').value,
+                deadline: document.getElementById('ofDeadline').value,
+                details: document.getElementById('ofDetails').value.trim()
+            };
+            submitBtn.disabled = true; spinner.style.display = 'block'; btnIcon.style.display = 'none';
+            sendToWhatsApp(data, 'order');
+            await sendToEmail(data, 'order');
+            document.getElementById('orderSuccess').style.display = 'block';
+            this.reset();
+            submitBtn.disabled = false; spinner.style.display = 'none'; btnIcon.style.display = 'inline';
+            setTimeout(() => { document.getElementById('orderSuccess').style.display = 'none'; }, 5000);
+            document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('contactSubmitBtn');
+            const spinner = document.getElementById('contactSpinner');
+            const btnIcon = submitBtn.querySelector('i');
+            const data = {
+                name: document.getElementById('cfName').value.trim(),
+                email: document.getElementById('cfEmail').value.trim(),
+                message: document.getElementById('cfMessage').value.trim()
+            };
+            submitBtn.disabled = true; spinner.style.display = 'block'; btnIcon.style.display = 'none';
+            sendToWhatsApp(data, 'message');
+            await sendToEmail(data, 'message');
+            document.getElementById('contactSuccess').style.display = 'block';
+            this.reset();
+            submitBtn.disabled = false; spinner.style.display = 'none'; btnIcon.style.display = 'inline';
+            setTimeout(() => { document.getElementById('contactSuccess').style.display = 'none'; }, 5000);
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navLinks.classList.toggle('active'); });
+        document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { hamburger.classList.remove('active'); navLinks.classList.remove('active'); }); });
+        window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+
+        const sections = document.querySelectorAll('section, .about-section');
+        const navItems = document.querySelectorAll('.nav-links a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => { if (window.scrollY >= section.offsetTop - 120) current = section.getAttribute('id') || 'about'; });
+            navItems.forEach(item => { item.classList.remove('active'); if (item.getAttribute('href') === '#' + current) item.classList.add('active'); });
+            if (window.scrollY < 300) navItems[0].classList.add('active');
+        });
+
+        function animateStats() {
+            document.querySelectorAll('.stat-number').forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-count'));
+                const suffix = stat.textContent.includes('+') ? '+' : '';
+                let count = 0;
+                const timer = setInterval(() => { count++; stat.textContent = count + suffix; if (count >= target) { clearInterval(timer); stat.textContent = target + suffix; } }, target > 100 ? 20 : 100);
+            });
+        }
+        const heroObserver = new IntersectionObserver((entries) => { if (entries[0].isIntersecting) { animateStats(); heroObserver.unobserve(entries[0].target); } }, { threshold: 0.5 });
+        heroObserver.observe(document.querySelector('.hero'));
+
+        const cardObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.2 });
+        document.querySelectorAll('.service-card').forEach(card => { card.style.opacity = '0'; card.style.transform = 'translateY(30px)'; card.style.transition = 'all 0.6s ease'; cardObserver.observe(card); });
+
+        console.log('🚀 MZ Marketing Hub - Ready!');
+        console.log('📍 Mardan, Peshawar, Pakistan');
+        console.log('📱 WhatsApp: +' + YOUR_WHATSAPP);
+    </script>
+</body>
+</html>
